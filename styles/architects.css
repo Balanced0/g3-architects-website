@@ -10,6 +10,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav-links{
     display: flex;
@@ -29,4 +30,43 @@ header{
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+.navbar h3{
+    font-size: 3rem; 
+    font-weight: 700;
+}
+.banner-info{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.orange-button{
+    background-color: #FF900E;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.banner-info h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-info p{
+    font-size: 1rem;
+    color: #727272;
+    line-height: 1.625rem;
+    padding-bottom: 32px;
+}
+
+.banner-image{
+    width: 100%;
+}
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
