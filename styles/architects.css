@@ -80,7 +80,8 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-main .teams, main .facts {
+/* -- top margin here -- */
+main .teams, main .facts, main .sponsors {
     margin-top: 130px;
 }
 .team-info h3{
@@ -150,11 +151,53 @@ main .teams, main .facts {
     font-weight: 600;
     margin-top: 0px;
 }
+.sponsors{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sponsors-info h3{
+    font-size: 2.8125rem;
+    color: #131313;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sponsors-info p{
+    font-size: 1rem;
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 50px;
+    max-width: 542px;
+}
+
+.sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:155px;
+    align-items: center;
+}
+.sponsors-images img{
+    filter: grayscale(100%);
+}
 @media screen and (max-width: 576px){
     .navbar, .nav-links, .teams{
         flex-direction: column;
     }
     .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fact-cards{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .fact-card{
+        width:100%;
+    }
+    .sponsors-images{
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -164,5 +207,8 @@ main .teams, main .facts {
     }
     .teams{
         flex-direction: column;
+    }
+    .sponsors-images{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
