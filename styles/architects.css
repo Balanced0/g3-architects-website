@@ -6,3 +6,27 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 500;
+}
+
+header{
+    background-color: #FFF4E7;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
