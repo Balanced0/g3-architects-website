@@ -185,7 +185,7 @@ main .teams, main .facts, main .sponsors, main .features{
 }
 .features{
     display: flex;
-    gap: 54px;
+    gap: 146px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -196,6 +196,7 @@ main .teams, main .facts, main .sponsors, main .features{
     margin-bottom: 24px;
     border-left: 5px solid #FF900E;
     padding-left: 21px;
+    margin-top: 0px;
 }
 .features-info p{
     font-size: 1rem;
@@ -222,10 +223,26 @@ main .teams, main .facts, main .sponsors, main .features{
 
 .features-info{
     max-width: 586px;
-    margin: 0 auto;
+}
+.special-button{
+    background-color: #FF900E;
+    padding: 45px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: -100px;
+    margin-left: -80px;
+}
+#experience{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#letter{
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 @media screen and (max-width: 576px){
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features{
         flex-direction: column;
     }
     .team-images{
@@ -240,6 +257,12 @@ main .teams, main .facts, main .sponsors, main .features{
     }
     .sponsors-images{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .features-image img{
+        width: 100%;
+    }
+    .special-button{
+        margin: 20px 20px;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 768px){
